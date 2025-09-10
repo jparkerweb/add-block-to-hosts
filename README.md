@@ -66,3 +66,27 @@ C:\Windows\System32\drivers\etc\hosts
 ```
 
 Remove the line containing the blocked address, or restore from a backup created by this script.
+
+## Bonus: Network Traffic Analysis with Fiddler
+
+This repository includes `FiddlerSetup.5.0.20253.3311-latest.zip` - a network traffic analyzer that can help you discover addresses you might want to block.
+
+### What is Fiddler?
+
+Fiddler is a web debugging proxy that logs all HTTP(S) traffic between your computer and the internet. It's useful for:
+- Identifying unwanted network requests from applications
+- Discovering tracking domains and analytics endpoints
+- Finding advertising networks to block
+- Analyzing what websites your browser or applications connect to
+
+### Using Fiddler to find addresses to block
+
+1. Install Fiddler from the included zip file
+2. Run Fiddler and start capturing traffic
+3. Use your computer normally or visit websites
+4. Review the captured requests to identify unwanted domains
+5. Use those domain names with this blocking script
+
+### Important note
+
+**Fiddler is completely optional** - you don't need it to use the blocking script. It's simply a helpful tool for discovering what addresses you might want to block. The PowerShell script works independently and only requires the domain/address you want to block.
