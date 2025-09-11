@@ -1,6 +1,7 @@
 # 🚫 add-block-to-hosts
-
 A PowerShell script to block websites and domains by adding entries to your Windows hosts file.
+
+<img src="./.readme/add-block-to-hosts.jpg" alt="add-block-to-hosts" style="max-width: 600px;">
 
 ## What it does
 
